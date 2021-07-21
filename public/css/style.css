@@ -1,0 +1,16 @@
+img{
+    height: 180px;
+    padding: 7px;
+}
+body{
+    background-color: rgb(248, 245, 242);
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    height: 365px;
+    /* width: 100px; */
+    border-radius: 15px;
+    /* text-align: center; */
+    margin: 15px;
+}

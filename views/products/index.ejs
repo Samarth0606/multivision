@@ -1,0 +1,38 @@
+<%- include("../partials/header")  %> 
+<%- include("../partials/navbar")  %> 
+
+
+
+
+
+
+
+
+<!-- //alternative code -->
+
+<main class="container">
+        <h1 style="text-align: center; background-color: rgb(255, 255, 254); color: rgb(2, 0, 0);">Welcome to the website of ESS-PEE Entertainment cable and network</h1>
+                <div class="row">
+                        <% for(let product of products){%>
+                            <div class="col-lg-4  col-md-8">
+                                <div class="card" style="width: 22rem;">
+                                    <img src=<%= product.image %>  class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title"><%= product.name %> </h5>
+                                      <p class="card-text"><%= product.desc.substring(0,90) %> </p>
+                                      <a href="/products/<%= product._id %>" class="btn btn-primary">Show</a>
+                                      <a href="#" class="btn btn-success">Buy</a>
+                                      <a href="#" class="btn btn-secondary ">Add To Cart</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        <% }  %>                     
+                </div>
+            </div>
+        
+
+</main>
+
+
+  
+<%- include("../partials/footer")  %> 
